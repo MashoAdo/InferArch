@@ -1,1 +1,1 @@
-web: werkzeug infer_arch.wsgi 
+web: gunicorn infer_arch.wsgi 
