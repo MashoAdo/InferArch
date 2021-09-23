@@ -1,0 +1,27 @@
+{% extends "arch/base.html" %}
+{% load static %}
+{% block content %}
+<head>
+    <link rel="stylesheet" type="text/css" href="{% static 'arch/about/about.css' %}">
+</head>
+    <div class=e17_29>
+    <span  class="e17_30">About Us</span>
+        <div class="e17_38"></div>
+        <div class="e27_42"></div>
+        <div class="e27_43"></div>
+    <span  class="e33_2">Mission</span>
+    <span  class="e33_3">To transform the way decision-makers and analysts collect 
+    and interpret data, and empower organizations to 
+    make smarter business decisions.</span>
+    <span  class="e33_4">InferArch is a data and analytics company based in Nairobi, Kenya 
+    whose core competency is in the process of data research, 
+    which retrieves and transforms on-premises data into 
+    a form that can be used to train machine learning algorithms.</span>
+    <span  class="e33_22">Vision</span>
+    <span  class="e53_2">Accelerating the value proposition of data analytics among SMEs.</span>
+    <img class=e27_42 src="{% static "arch/media/about-img.png" %}" alt="">
+    <img class=e27_43 src="{% static "arch/media/Rectangle6.png" %}" alt="">
+    <button type="button" class="e53_3"><a href="{% url 'home' %}" style="color:white">Return Home</a></button>
+    </div>
+{% endblock%}
+
