@@ -52,6 +52,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'responsive.middleware.DeviceInfoMiddleware',
 ]
 
 ROOT_URLCONF = 'infer_arch.urls'
@@ -67,10 +68,17 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'responsive.context_processors.device_info',
             ],
         },
     },
 ]
+
+DEFAULT_BREAKPOINTS = {
+    'phone': 480,
+    'tablet': 767,
+    'desktop': None,
+}
 
 WSGI_APPLICATION = 'infer_arch.wsgi.application'
 
