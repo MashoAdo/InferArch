@@ -1,1 +1,1 @@
-web: gunicorn inferarch.wsgi 
+web: gunicorn infer_arch.wsgi 
