@@ -122,10 +122,10 @@ main {
 }
 
 .dots {
-  position: absolute;
-  left: 0;
-  top: 100px;
-  z-index: 10;
+	position: absolute;
+	left: 100px;
+	top: 100px;
+	z-index: 10;
 }
 
 .background2 {
